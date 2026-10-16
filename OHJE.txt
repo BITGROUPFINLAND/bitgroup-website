@@ -1,0 +1,14 @@
+BIT GROUP V3 – LOGOJEN ULKOASUN KORJAUS
+
+Vie GitHubiin nämä 3 tiedostoa täsmälleen näihin polkuihin:
+1. src/pages/index.astro
+2. public/styles.css
+3. public/bitgroup-v3-symbol.svg (UUSI TIEDOSTO)
+
+GitHubissa: avaa oikea kansio, korvaa tiedostot tai lisää uusi, Commit changes.
+Odota Cloudflare Pages -julkaisun valmistumista. Päivitä Ctrl+F5.
+
+Yläpalkin ja alatunnisteen toimivaa logoa ei muuteta.
+Etusivun ja Meistä-osion kuvat vaihdetaan läpinäkyvään SVG-symboliin.
+Symboli on piirretty uudelleen alkuperäisen pienen rasterikuvan pohjalta,
+joten värien ja yksittäisten viivojen yksityiskohdat voivat hieman poiketa.

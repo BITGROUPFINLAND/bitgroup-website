@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 606 726" role="img" aria-label="Bit Groupin geometrinen B-tunnus">
+<defs>
+<linearGradient id="lt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1067bd"/><stop offset="1" stop-color="#168de0"/></linearGradient>
+<linearGradient id="bt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#198fe4"/><stop offset="1" stop-color="#1260b7"/></linearGradient>
+<linearGradient id="rt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1587d4"/><stop offset="1" stop-color="#073575"/></linearGradient>
+</defs>
+<!-- Käsin uudelleen piirretty, läpinäkyvä vektoriversio alkuperäisen symbolin muodoista -->
+<path fill="url(#lt)" d="M34 104 184 12 184 194 34 290Z"/>
+<path fill="#179de6" d="M34 290 184 194 184 376 34 552Z"/>
+<path fill="#30b5f0" d="M34 290 184 376 184 467 34 552Z"/>
+<path fill="url(#bt)" d="M34 552 184 467 304 540 304 707Z"/>
+<path fill="#1354a4" d="M184 376 380 489 420 466 304 540 184 467Z"/>
+<path fill="#38b6ed" d="M304 108 445 190 304 290Z"/>
+<path fill="#178ad5" d="M445 190 570 265 420 354 304 290Z"/>
+<path fill="#0d62b7" d="M420 354 570 265 570 375 420 466Z"/>
+<path fill="#104a97" d="M420 466 570 375 570 552 420 466Z"/>
+<path fill="url(#rt)" d="M304 540 420 466 570 552 304 707Z"/>
+</svg>

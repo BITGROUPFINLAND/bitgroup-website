@@ -48,3 +48,30 @@
 }
 @media(max-width:1000px){.hero-art{display:flex;min-height:360px;height:360px}.hero-inner{padding-bottom:10px}}
 @media(max-width:700px){.hero-art{height:290px;min-height:290px}.hero-art .hero-symbol{width:190px}.float-top{top:25px;right:5px}.float-bottom{bottom:20px;left:5px}.orbit-one{width:260px}.orbit-two{width:340px}.orbit-three{width:420px}.about-visual .about-logo{width:88%;padding:8px}}
+
+/* V3: yhtenäinen läpinäkyvä vektorisymboli, ilman valkoista kuvapohjaa */
+.hero-art .hero-symbol {
+  position: relative; top: auto; left: auto; transform: none;
+  display: block; width: min(46%, 255px); height: auto; max-width: 255px; max-height: none;
+  z-index: 1; object-fit: contain; mix-blend-mode: normal;
+  filter: drop-shadow(0 24px 36px rgba(0, 8, 32, .32));
+}
+.about-visual {
+  background: radial-gradient(circle at 50% 46%, #e8f2fc 0%, #e0ebf8 60%, #d5e3f4 100%);
+}
+.about-visual:before {
+  width: min(72%, 340px); height: auto; aspect-ratio: 1;
+  box-shadow: 0 0 0 62px rgba(255,255,255,.12);
+  border-color: rgba(77,129,185,.23);
+}
+.about-visual .about-logo {
+  display: block; position: relative; z-index: 2; width: min(36%, 175px);
+  max-width: 175px; height: auto; margin: 0; object-fit: contain;
+  mix-blend-mode: normal; filter: drop-shadow(0 16px 22px rgba(23,60,110,.14));
+}
+.about-caption { right: 22px; bottom: 24px; left: 22px; text-align: center; line-height: 1.6; }
+@media(max-width:700px) {
+  .about-visual .about-logo { width: 120px; }
+  .about-visual:before { width: 235px; }
+  .about-caption { font-size: 9px; }
+}
