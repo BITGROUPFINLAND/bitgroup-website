@@ -1,0 +1,6 @@
+Bit Group V7.2
+- Asiakasyrityksiä noin 70 (aiemmin noin 100).
+- Hallittuja päätelaitteita noin 2 600.
+- Etätuki-painike ja muu V7.1-sivusto säilyvät.
+
+Päivitä GitHubiin koko paketti tai pelkästään src/pages/index.astro, jos V7.1 on jo käytössä.
