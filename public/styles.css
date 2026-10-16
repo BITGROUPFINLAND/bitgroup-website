@@ -35,3 +35,16 @@
   position: relative;
   z-index: 2;
 }
+/* V3: kuvien varma sijoittelu */
+.hero-art .hero-symbol {
+  display:block;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:min(62%,360px);height:auto;max-height:380px;object-fit:contain;
+  z-index:1;mix-blend-mode:normal;filter:drop-shadow(0 22px 45px rgba(0,0,0,.22));
+}
+.about-visual .about-logo {
+  display:block;position:relative;width:80%;max-width:410px;height:auto;
+  margin:auto;object-fit:contain;z-index:1;mix-blend-mode:normal;
+  background:white;border-radius:8px;padding:12px;
+}
+@media(max-width:1000px){.hero-art{display:flex;min-height:360px;height:360px}.hero-inner{padding-bottom:10px}}
+@media(max-width:700px){.hero-art{height:290px;min-height:290px}.hero-art .hero-symbol{width:190px}.float-top{top:25px;right:5px}.float-bottom{bottom:20px;left:5px}.orbit-one{width:260px}.orbit-two{width:340px}.orbit-three{width:420px}.about-visual .about-logo{width:88%;padding:8px}}
