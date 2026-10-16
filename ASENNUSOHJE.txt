@@ -1,0 +1,26 @@
+BIT GROUP – V4-SIVUSTO / ESITTELYVERSIO
+
+Tämä ZIP sisältää KOKONAISEN Astro-sivuston. Se pohjautuu V3-ulkoasuun.
+
+TÄRKEÄÄ: ZIPiä ei ladata GitHubiin yhtenä tiedostona.
+
+Helpoin tapa:
+1. Pura ZIP tietokoneelle.
+2. Avaa GitHubin BITGROUPFINLAND/bitgroup-website -repositorio.
+3. Siirrä kaikki paketissa olevat src- ja public-kansioiden tiedostot
+   samoihin polkuihin GitHubissa (korvaa index.astro, Layout.astro ja styles.css).
+4. Lisää viisi uutta palvelusivua kansioon src/pages/palvelut/.
+5. Lisää uudet SVG-kuvat public-kansioon.
+6. Tee Commit changes. Cloudflare Pages julkaisee main-haaran muutokset.
+7. Odota julkaisun onnistumista ja päivitä selaimessa Ctrl+F5.
+
+Voit myös käyttää GitHub Desktopia ja kopioida koko paketin repositorion
+paikalliseen kansioon, minkä jälkeen Commit + Push.
+
+HUOMIOT:
+- Tämä on SISÄLTÖ- JA ULKOASUESITTELY. Älä ohjaa bitgroup.fi-domainia tähän
+  ennen kuin sisältö, yhteystiedot ja palvelulupaukset on hyväksytty.
+- Workplace Security on merkitty suunnitteilla olevaksi.
+- Yhteydenottopainike vie toistaiseksi nykyiselle bitgroup.fi-sivustolle.
+- Kuvitukset ovat uusia SVG-vektorikuvia. Henkilöstökuvia ei ole keksitty.
+- Kaseya- tai muita teknologiatoimittajia ei mainita Endpointin kuvauksessa.

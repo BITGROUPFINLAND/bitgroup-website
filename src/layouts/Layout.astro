@@ -16,16 +16,16 @@ const { title = 'Bit Group | IT-palvelut yrityksille', description = 'Henkilöko
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=3" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header class="site-header"><div class="container nav">
-    <a class="brand" href="/" aria-label="Bit Group etusivu"><img class="brand-logo" src="/bitgroup-v2-logo.png?v=3" alt="Bit Group – IT-palvelut yrityksille" width="409" height="126" /></a>
+    <a class="brand" href="/" aria-label="Bit Group etusivu"><img class="brand-logo" src="/bitgroup-v2-logo.png" alt="Bit Group – IT-palvelut yrityksille" width="409" height="126" /></a>
     <button class="menu-toggle" aria-label="Avaa valikko" aria-expanded="false" aria-controls="main-nav">☰</button>
-    <nav id="main-nav" aria-label="Päävalikko"><a href="/#palvelut">Palvelut</a><a href="/#miksi">Miksi Bit Group?</a><a href="/#meista">Meistä</a><a class="nav-contact" href="/#yhteys">Ota yhteyttä <span>↗</span></a></nav>
+    <nav id="main-nav" aria-label="Päävalikko"><a href="/#palvelut">Palvelut</a><a href="/#toimintamalli">Toimintamalli</a><a href="/#miksi">Miksi Bit Group?</a><a class="nav-contact" href="/#yhteys">Ota yhteyttä <span>↗</span></a></nav>
   </div></header>
   <main><slot /></main>
-  <footer><div class="container footer-inner"><div><a class="footer-brand" href="/"><img class="footer-logo" src="/bitgroup-v2-logo.png?v=3" alt="Bit Group" width="409" height="126" /></a><p>IT-palvelua, joka tekee työstä sujuvampaa.</p></div><div><strong>Bit Group Finland Oy</strong><p>Kotka · Palvelemme yrityksiä koko Suomessa</p></div><a href="/#yhteys">Ota yhteyttä ↗</a></div><div class="container footer-bottom">© {new Date().getFullYear()} Bit Group Finland Oy</div></footer>
+  <footer><div class="container footer-inner"><div><a class="footer-brand" href="/"><img class="footer-logo" src="/bitgroup-v2-logo.png" alt="Bit Group" width="409" height="126" /></a><p>Laaja-alaista IT-osaamista. Yksi luotettava kumppani.</p></div><div><strong>Bit Group Finland Oy</strong><p>Kotka · Palvelemme yrityksiä koko Suomessa</p></div><a href="/#yhteys">Ota yhteyttä ↗</a></div><div class="container footer-bottom">© {new Date().getFullYear()} Bit Group Finland Oy</div></footer>
   <script is:inline>
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('#main-nav');
