@@ -25,3 +25,6 @@ npm run build
 - Lisää vahvistetut yhteystiedot ja toimiva yhteydenottotapa; etusivun linkki ohjaa toistaiseksi nykyiselle sivustolle.
 - Testaa mobiili, saavutettavuus ja hakukonenäkyvyys.
 - Cloudflaren custom domain vasta kun sivusto on valmis.
+
+## Päivitys V2
+Valittu V2-geometrinen logo on rajattu aiemmasta brändiesityskuvasta. Korvaa PNG-tiedostot lopullisilla läpinäkyvillä vektoritiedostoilla, kun ne valmistuvat. Logo on tässä esikatselulaatuinen.
