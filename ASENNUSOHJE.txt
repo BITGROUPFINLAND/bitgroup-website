@@ -1,26 +1,20 @@
-BIT GROUP – V4-SIVUSTO / ESITTELYVERSIO
+BIT GROUP V6 – LOGOT JA YHTEYSTIEDOT
 
-Tämä ZIP sisältää KOKONAISEN Astro-sivuston. Se pohjautuu V3-ulkoasuun.
+Tämä on koko Astro-sivuston päivityspaketti V5-version pohjalta.
+Kopioi src/ ja public/ kansioiden sisältö GitHubiin vastaaviin polkuihin.
+Älä lataa ZIP-tiedostoa sellaisenaan GitHubiin.
 
-TÄRKEÄÄ: ZIPiä ei ladata GitHubiin yhtenä tiedostona.
+UUTTA:
+- Alatunnisteessa Avainlippu (Suomalaista palvelua), Luotettava Kumppani ja G30 Finland -logot.
+- Alkuperäiset logotiedostot, ei uudelleenpiirrettyjä tunnuksia.
+- G30-logon tausta musta, logo säilytetty alkuperäisessä muodossa.
+- Yhteystiedoissa toimitusjohtaja Marko Vahteri, +358 45 653 33 30, info@bitgroup.fi, Kyminlinnantie 6, 48600 Kotka, Y-tunnus 1979964-1.
+- Aiempi 029-alkuinen numero poistettu.
 
-Helpoin tapa:
-1. Pura ZIP tietokoneelle.
-2. Avaa GitHubin BITGROUPFINLAND/bitgroup-website -repositorio.
-3. Siirrä kaikki paketissa olevat src- ja public-kansioiden tiedostot
-   samoihin polkuihin GitHubissa (korvaa index.astro, Layout.astro ja styles.css).
-4. Lisää viisi uutta palvelusivua kansioon src/pages/palvelut/.
-5. Lisää uudet SVG-kuvat public-kansioon.
-6. Tee Commit changes. Cloudflare Pages julkaisee main-haaran muutokset.
-7. Odota julkaisun onnistumista ja päivitä selaimessa Ctrl+F5.
+TARKISTA ENNEN JULKAISUA:
+- Bit Groupin oikeus käyttää kaikkia kolmea tunnusta on voimassa.
+- G30-ohjeen mukaan jäsenliike voi käyttää logoa, ja Avainlippu käytetään Suomalaista palvelua -versiona.
+- Tunnuksia ei saa venyttää tai muokata.
+- Sähköpostiosoite on tässä edelleen tavallisena linkkinä: erillinen botilta suojaaminen ei kuulu tähän muutokseen.
 
-Voit myös käyttää GitHub Desktopia ja kopioida koko paketin repositorion
-paikalliseen kansioon, minkä jälkeen Commit + Push.
-
-HUOMIOT:
-- Tämä on SISÄLTÖ- JA ULKOASUESITTELY. Älä ohjaa bitgroup.fi-domainia tähän
-  ennen kuin sisältö, yhteystiedot ja palvelulupaukset on hyväksytty.
-- Workplace Security on merkitty suunnitteilla olevaksi.
-- Yhteydenottopainike vie toistaiseksi nykyiselle bitgroup.fi-sivustolle.
-- Kuvitukset ovat uusia SVG-vektorikuvia. Henkilöstökuvia ei ole keksitty.
-- Kaseya- tai muita teknologiatoimittajia ei mainita Endpointin kuvauksessa.
+Cloudflare Pages rakentaa sivuston GitHub-commitista automaattisesti.
