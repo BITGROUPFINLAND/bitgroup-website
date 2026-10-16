@@ -11,8 +11,10 @@ const { title = 'Bit Group | IT-palvelut yrityksille', description = 'Henkilöko
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- Testiversio: muuta indeksointi vasta tuotantodomainin julkaisun yhteydessä. -->
   <title>{title}</title>
+  <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"ProfessionalService","name":"Bit Group Finland Oy","address":{"@type":"PostalAddress","streetAddress":"Kyminlinnantie 6","postalCode":"48600","addressLocality":"Kotka","addressCountry":"FI"},"telephone":"+358456533330","foundingDate":"2007","url":"https://www.bitgroup.fi/"})} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -22,11 +24,16 @@ const { title = 'Bit Group | IT-palvelut yrityksille', description = 'Henkilöko
   <header class="site-header"><div class="container nav">
     <a class="brand" href="/" aria-label="Bit Group etusivu"><img class="brand-logo" src="/bitgroup-v2-logo.png" alt="Bit Group – IT-palvelut yrityksille" width="409" height="126" /></a>
     <button class="menu-toggle" aria-label="Avaa valikko" aria-expanded="false" aria-controls="main-nav">☰</button>
-    <nav id="main-nav" aria-label="Päävalikko"><a href="/#palvelut">Palvelut</a><a href="/#toimintamalli">Toimintamalli</a><a href="/#miksi">Miksi Bit Group?</a><a class="nav-contact" href="/#yhteys">Ota yhteyttä <span>↗</span></a></nav>
+    <nav id="main-nav" aria-label="Päävalikko"><a href="/#palvelut">Palvelut</a><a href="/#toimintamalli">Toimintamalli</a><a href="/#miksi">Miksi Bit Group?</a><a class="nav-contact" href="/#yhteys">Ota yhteyttä <span>↗</span></a><a class="nav-remote" href="https://get.teamviewer.com/bgfqs" target="_blank" rel="noopener noreferrer" aria-label="Avaa Bit Groupin etätuki uuteen välilehteen">ETÄTUKI <span aria-hidden="true">↗</span></a></nav>
   </div></header>
   <main><slot /></main>
-  <footer><div class="container footer-inner"><div><a class="footer-brand" href="/"><img class="footer-logo" src="/bitgroup-v2-logo.png" alt="Bit Group" width="409" height="126" /></a><p>Laaja-alaista IT-osaamista. Yksi luotettava kumppani.</p></div><div class="footer-contact"><strong>Bit Group Finland Oy</strong><p>Kyminlinnantie 6<br />48600 Kotka<br />Y-tunnus 1979964-1</p><p>Marko Vahteri<br />Toimitusjohtaja</p><p><a href="mailto:info@bitgroup.fi">info@bitgroup.fi</a><br /><a href="tel:+358456533330">+358 45 653 33 30</a></p></div><a href="/#yhteys">Ota yhteyttä ↗</a></div><div class="footer-trust" aria-label="Jäsenyydet ja luotettavuusmerkit"><div class="container"><p class="footer-trust-heading">Luottamuksen arvoinen IT-kumppani</p><div class="footer-trust-logos"><div class="trust-logo-card trust-avainlippu"><img src="/avainlippu-suomalaista-palvelua.png" alt="Avainlippu – Suomalaista palvelua" loading="lazy" /></div><div class="trust-logo-card trust-luotettava"><img src="/luotettava-kumppani.png" alt="Luotettava Kumppani" loading="lazy" /></div><div class="trust-logo-card trust-g30"><img src="/g30-finland.png" alt="G30 Finland – Group of IT Professionals" loading="lazy" /></div></div></div></div><div class="container footer-bottom">© {new Date().getFullYear()} Bit Group Finland Oy</div></footer>
+  <footer><div class="container footer-inner"><div><a class="footer-brand" href="/"><img class="footer-logo" src="/bitgroup-v2-logo.png" alt="Bit Group" width="409" height="126" /></a><p>Laaja-alaista IT-osaamista. Yksi luotettava kumppani.</p></div><div class="footer-contact"><strong>Bit Group Finland Oy</strong><p>Kyminlinnantie 6<br />48600 Kotka<br />Y-tunnus 1979964-1</p><p>Marko Vahteri<br />Toimitusjohtaja</p><p><a class="protected-email" data-local="info" data-domain="bitgroup.fi" href="/#yhteys">Näytä sähköpostiosoite</a><br /><a href="tel:+358456533330">+358 45 653 33 30</a></p></div><div class="footer-services"><strong>Palvelut</strong><a href="/palvelut/endpoint/">Bit Group Endpoint</a><a href="/palvelut/microsoft-365/">Microsoft 365</a><a href="/palvelut/network/">Bit Group Network</a><a href="/palvelut/workplace-security/">Workplace Security</a><a href="/palvelut/asiantuntijapalvelut/">Asiantuntijapalvelut</a></div></div><div class="footer-trust" aria-label="Jäsenyydet ja luotettavuusmerkit"><div class="container"><p class="footer-trust-heading">Luottamuksen arvoinen IT-kumppani</p><div class="footer-trust-logos"><div class="trust-logo-card trust-avainlippu"><img src="/avainlippu-suomalaista-palvelua.png" alt="Avainlippu – Suomalaista palvelua" loading="lazy" /></div><div class="trust-logo-card trust-luotettava"><img src="/luotettava-kumppani.png" alt="Luotettava Kumppani" loading="lazy" /></div><div class="trust-logo-card trust-g30"><img src="/g30-finland.png" alt="G30 Finland – Group of IT Professionals" loading="lazy" /></div></div></div></div><div class="container footer-bottom">© {new Date().getFullYear()} Bit Group Finland Oy <span class="footer-legal"><a href="/tietosuoja/">Tietosuoja ja evästeet</a></span></div></footer>
   <script is:inline>
+    document.querySelectorAll('.protected-email, .protected-email-action').forEach(el => {
+      const address = `${el.dataset.local}@${el.dataset.domain}`;
+      el.href = `mailto:${address}`;
+      if (el.classList.contains('protected-email')) el.textContent = address;
+    });
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('#main-nav');
     toggle?.addEventListener('click', () => { const open = toggle.getAttribute('aria-expanded') !== 'true'; toggle.setAttribute('aria-expanded', String(open)); nav.classList.toggle('open', open); });

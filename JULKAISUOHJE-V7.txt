@@ -1,0 +1,11 @@
+BIT GROUP V7 – ASENNUS JA TARKISTUSLISTA
+
+1. Pura ZIP. Kopioi src/ ja public/ -kansioiden sisältö GitHubin vastaaviin polkuihin. Korvaa samannimiset tiedostot. Lisää uusi src/pages/tietosuoja.astro.
+2. Älä poista muita GitHubin tiedostoja. Commit changes. Odota Cloudflare Pages -julkaisua.
+3. Tarkista etusivu, kaikki viisi palvelusivua, alatunniste, yhteystiedot ja mobiilinäkymä.
+4. V7 asettaa noindex,nofollow KAIKILLE sivuille. Tämä on tarkoituksellista testivaiheessa. Kun bitgroup.fi julkaistaan, muuta src/layouts/Layout.astro robots-metatagi index,follow-muotoon tuotantodomainin osalta. Huomaa, että sama Pages-projekti voi palvella sekä pages.dev- että omaa domainia: tällöin domainikohtainen X-Robots-Tag-reunaehto tai Cloudflare-sääntö on parempi kuin yleinen meta.
+5. Tietosuoja ja evästeet -sivu on LUONNOS: täydennä ja tarkista ennen tuotantojulkaisua. Varmista erityisesti mahdollinen analytiikka, Cloudflaren lokit ja Google Fonts.
+6. Referenssejä tai Microsoft-kumppanuusstatusta ei ole keksitty. Lisää ne vain varmennettuina. Asiakasluku noin 100 ja aloitusvuosi 2007 perustuvat antamiisi tietoihin.
+7. Sähköposti muodostetaan JavaScriptillä selaimessa; tämä hidastaa vain yksinkertaisia keräysbotteja, ei estä kehittyneitä. Ilman JavaScriptiä puhelinnumero toimii normaalisti.
+8. Palveluajoista ja vasteajoista ei anneta vahvistamattomia lupauksia. Workplace Security on edelleen suunniteltu kokonaisuus.
+9. Logot säilyvät V6-paketin mukaisina; varmista tunnusten käyttöoikeuksien voimassaolo.

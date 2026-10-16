@@ -1,0 +1,10 @@
+Bit Group V7.1 – ETÄTUKI-painike
+
+Muutokset: src/layouts/Layout.astro ja public/styles.css.
+
+GitHubissa voit korvata vain nämä kaksi tiedostoa, jos V7 on jo käytössä.
+Tai kopioida koko tämän paketin V7-sivuston päälle samoihin kansioihin.
+
+Etätuki avautuu uuteen välilehteen: https://get.teamviewer.com/bgfqs
+
+Julkaise Commit changes -painikkeella. Odota Cloudflare Pagesin valmistumista ja päivitä Ctrl+F5.
